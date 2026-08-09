@@ -13,11 +13,12 @@ Date created: August 10, 2026
 
 # How to use this app?
 - The `generate_db.R` file is used to generate an empty database to start
-- Then, 
+- Then, run `app.R`
+- Ta da!
 
 ## Resources used to buikd the app?
 - ["Tutorial: Build your own data collection app in R"](https://www.sebastianvanbaalen.se/uploads/tutorial-data-collection-app#step-3-specifying-the-server-logic) by Sebastian van Baalen
 - [Mastering Shiny](https://mastering-shiny.org/index.html) by Hadley Wickham
 
-## Future updates ?
+## Future updates?
 - Plan to add helper notes using `library(shinyhelper)` ... eventually
