@@ -1,16 +1,7 @@
 library(shiny)
 library(DBI)
-library(bslib)
-library(gridlayout)
-library(shinythemes) # To select a theme
-library(DT) # To display an interactive dataset table
-library(tidyverse) # To perform data manipulation tasks
 library(shinyalert) # To display informative dialogue boxes
-library(shinyjs) # To add Javascript to the app
 library(ggplot2) # To visualize your data
-library(leaflet) # To create interactive maps
-library(uuid) # To create unique identifiers for each entry
-library(shinyhelper) # To add helper notes
 library(lubridate) # To work with dates
 
 ##### SQLite-related commands ####
@@ -61,10 +52,6 @@ addRowToItem <- function(new_item) {
 ui <- fluidPage(
   navlistPanel(
     id = "navlist",
-  tabPanel("Read me", 
-              h3("Welcome to the Grey Literature Search Tracker!"),
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              ),
   tabPanel(
       title = "View Data",
       selectInput("selected_table", label = "Select table", choices = c("source", "search","record","item"), selected = ""),
