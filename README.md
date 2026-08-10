@@ -12,9 +12,9 @@ Date created: August 10, 2026
 - So, this is the perfect opportunity to improve the UX/UI of the documentation form, brush up on `Shiny`, AND learn `SQL`
 
 # How to use this app?
-- The `generate_db.R` file is used to generate an empty database to start
-- Then, run `app.R`
-- Ta da!
+- Generate an empty database using `generate_db.R`
+- Run `app.R`
+- *Ta da!* Start entering data
 
 ## Resources used to buikd the app?
 - ["Tutorial: Build your own data collection app in R"](https://www.sebastianvanbaalen.se/uploads/tutorial-data-collection-app#step-3-specifying-the-server-logic) by Sebastian van Baalen
@@ -22,3 +22,5 @@ Date created: August 10, 2026
 
 ## Future updates?
 - Plan to add helper notes using `library(shinyhelper)` ... eventually
+- I've been informed by my lovely partner that this is called `CRUD` (Create-Read-Update-Delete) app, so I will need to add `Update` and `Delete` functions for it to be fully CRUD :D
+- Add some kind of dynamic text to display the names of linked IDs between databases
